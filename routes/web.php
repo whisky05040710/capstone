@@ -19,6 +19,8 @@ Route::get('/', function () {
 });
 
 route::resource('/staffs','App\Http\Controllers\StaffUsersController');
+route::resource('/inventory','App\Http\Controllers\InventoryController');
+
 
 route::controller(AuthController::class)->group(function () {
     Route::get('/signin','signin')->name('signin');
